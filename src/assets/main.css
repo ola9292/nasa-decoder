@@ -1,0 +1,91 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  height: 90svh;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+.container{
+  /* background-color: yellow; */
+  background-color: gray;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container > h1{
+  color: #222222;
+}
+.container > input{
+  width: 80%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: #222222;
+}
+.container> .result{
+  background-color: #fff;
+  width: 80%;
+  border-radius: 10px;
+    padding: 20px 10px;
+    color: #222222;
+}
+.container > .cta{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.container>.cta > .reset-btn {
+  background-color: green;
+  color: #fff;
+}
+.container > .cta > button{
+  padding: 8px 20px;
+    border-radius: 20px;
+    border:none;
+}
+.container>.cta>button:hover {
+
+  background-color: purple;
+  color: #fff;
+}
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 50px 20px;
+    /* display: flex;
+    place-items: center; */
+  }
+  .container {
+    width: 70%;
+    
+    /* margin: auto; */
+
+  }
+  /* #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+}
