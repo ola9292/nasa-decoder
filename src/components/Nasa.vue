@@ -5,7 +5,7 @@ const resultText = ref('')
 const convertText = () => {
      resultText.value = ""
     if(myText.value != ""){
-        let textArr = myText.value.split('')
+        let textArr = myText.value.toLowerCase().split('')
         for(let i = 0; i < textArr.length; i++){
            textArr[i] = nasaPhoneticAlphabet[textArr[i]]
           
@@ -64,7 +64,7 @@ const nasaPhoneticAlphabet = {
 <template>
     
     <div class="container">
-        <h1>Text to Nasa Phonetic Alphabet</h1>
+        <h1 class="text-center">Text to Nasa Phonetic Alphabet</h1>
         <input type="text" v-model="myText">
         <div class="cta">
             <button @click="convertText">Convert to NASA</button>
@@ -73,6 +73,6 @@ const nasaPhoneticAlphabet = {
         <div class="result">
             {{ resultText }}
         </div>
-        <p>This app converts text to the NASA/NATO phonetic alphabet.</p>
+        <p class="text-center">This app converts text to the NASA/NATO phonetic alphabet.</p>
     </div>
 </template>
