@@ -72,6 +72,6 @@ const nasaPhoneticAlphabet = {
         <div class="result">
             {{ resultText }}
         </div>
-        <p class="text-center" style="color:white">This app converts text to the NASA/NATO phonetic alphabet.</p>
+        <p class="text-center" style="color: #222222;">This app converts text to the NASA/NATO phonetic alphabet.</p>
     </div>
 </template>
