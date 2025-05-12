@@ -14,7 +14,6 @@ const convertText = () => {
           resultText.value +=  textArr[i] + " "
         }
         myText.value = ""
-        console.log(resultText.value)
     }
 }
 const reset = () => {
@@ -65,7 +64,7 @@ const nasaPhoneticAlphabet = {
     
     <div class="container">
         <h1 class="text-center">Text to Nasa Phonetic Alphabet</h1>
-        <input type="text" v-model="myText">
+        <input type="text" v-model="myText" placeholder="enter text...">
         <div class="cta">
             <button @click="convertText">Convert to NASA</button>
             <button @click="reset" class="reset-btn">Reset</button>

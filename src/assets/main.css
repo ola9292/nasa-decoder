@@ -1,7 +1,7 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
@@ -9,7 +9,7 @@
   justify-content: center;
   align-items: center;
   /* border: 1px solid red; */
-  height: 95svh;
+  height: 90svh;
 }
 
 .text-center{
@@ -32,7 +32,6 @@ a,
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 90%;
 }
 .container > h1{
   color: #222222;
